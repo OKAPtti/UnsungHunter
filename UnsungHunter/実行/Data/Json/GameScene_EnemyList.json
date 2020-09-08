@@ -1,0 +1,26 @@
+{
+  "EnemyList": [
+    {
+      "ClassName": "Wolf",
+      "Position": [ 60.0, 0.0, 48.0 ],
+      "Rotation": [ 0.0, 90.0, 0.0 ]
+    },
+    {
+      "ClassName": "Wolf",
+      "Position": [ 106.0, 0.0, 123.0 ]
+    },
+    {
+      "ClassName": "Wolf",
+      "Position": [ 132.0, 0.0, 126.0 ]
+    },
+    {
+      "ClassName": "Wolf",
+      "Position": [ 118.0, 0.0, 137.0 ]
+    },
+    {
+      "ClassName": "Boss",
+      "Position": [ 8.0, 0.0, 135.0 ],
+      "Rotation": [ 0.0, -90.0, 0.0 ]
+    }
+  ]
+}

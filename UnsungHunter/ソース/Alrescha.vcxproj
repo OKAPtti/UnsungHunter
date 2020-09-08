@@ -1,0 +1,395 @@
+<?xml version="1.0" encoding="utf-8"?>
+<Project DefaultTargets="Build" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <ItemGroup Label="ProjectConfigurations">
+    <ProjectConfiguration Include="Debug|Win32">
+      <Configuration>Debug</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|Win32">
+      <Configuration>Release</Configuration>
+      <Platform>Win32</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Debug|x64">
+      <Configuration>Debug</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+    <ProjectConfiguration Include="Release|x64">
+      <Configuration>Release</Configuration>
+      <Platform>x64</Platform>
+    </ProjectConfiguration>
+  </ItemGroup>
+  <PropertyGroup Label="Globals">
+    <VCProjectVersion>16.0</VCProjectVersion>
+    <ProjectGuid>{6E83798B-1698-4840-901D-BE224C824498}</ProjectGuid>
+    <RootNamespace>Alrescha</RootNamespace>
+    <WindowsTargetPlatformVersion>10.0.18362.0</WindowsTargetPlatformVersion>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.Default.props" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>true</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'" Label="Configuration">
+    <ConfigurationType>Application</ConfigurationType>
+    <UseDebugLibraries>false</UseDebugLibraries>
+    <PlatformToolset>v142</PlatformToolset>
+    <WholeProgramOptimization>true</WholeProgramOptimization>
+    <CharacterSet>MultiByte</CharacterSet>
+  </PropertyGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.props" />
+  <ImportGroup Label="ExtensionSettings">
+  </ImportGroup>
+  <ImportGroup Label="Shared">
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <ImportGroup Label="PropertySheets" Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <Import Project="$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props" Condition="exists('$(UserRootDir)\Microsoft.Cpp.$(Platform).user.props')" Label="LocalAppDataPlatform" />
+  </ImportGroup>
+  <PropertyGroup Label="UserMacros" />
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <IncludePath>$(SolutionDir)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Library;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <PropertyGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <IncludePath>$(SolutionDir)Include;$(IncludePath)</IncludePath>
+    <LibraryPath>$(SolutionDir)Library;$(LibraryPath)</LibraryPath>
+  </PropertyGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library/Microsoft DirectX SDK/Include</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDir)Source/ArsAllIncludes.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Debug|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>Disabled</Optimization>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|Win32'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+      <AdditionalIncludeDirectories>$(SolutionDir)Library/Microsoft DirectX SDK/Include</AdditionalIncludeDirectories>
+      <ForcedIncludeFiles>$(SolutionDir)Source/ArsAllIncludes.h;%(ForcedIncludeFiles)</ForcedIncludeFiles>
+      <MultiProcessorCompilation>true</MultiProcessorCompilation>
+      <LanguageStandard>stdcpp17</LanguageStandard>
+    </ClCompile>
+    <Link>
+      <SubSystem>Windows</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemDefinitionGroup Condition="'$(Configuration)|$(Platform)'=='Release|x64'">
+    <ClCompile>
+      <WarningLevel>Level3</WarningLevel>
+      <Optimization>MaxSpeed</Optimization>
+      <FunctionLevelLinking>true</FunctionLevelLinking>
+      <IntrinsicFunctions>true</IntrinsicFunctions>
+      <SDLCheck>true</SDLCheck>
+      <ConformanceMode>true</ConformanceMode>
+    </ClCompile>
+    <Link>
+      <SubSystem>Console</SubSystem>
+      <EnableCOMDATFolding>true</EnableCOMDATFolding>
+      <OptimizeReferences>true</OptimizeReferences>
+    </Link>
+  </ItemDefinitionGroup>
+  <ItemGroup>
+    <ClInclude Include="Source\Core\Math\ArsMatrix44.h" />
+    <ClInclude Include="Source\Core\Math\ArsVector2.h" />
+    <ClInclude Include="Include\json\json11.hpp" />
+    <ClInclude Include="Library\json\json11.hpp" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\audiodefs.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\comdecl.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D2D1.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D2D1Helper.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D2DBaseTypes.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D2Derr.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D10.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D10effect.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3d10misc.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3d10sdklayers.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D10shader.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D10_1.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D10_1shader.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D11.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D11SDKLayers.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3D11Shader.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3d9.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3d9caps.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3d9types.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3Dcommon.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3Dcompiler.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DCSX.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX10.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx10async.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX10core.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX10math.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX10mesh.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX10tex.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX11.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX11async.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX11core.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\D3DX11tex.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9anim.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9core.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9effect.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9math.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9mesh.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9shader.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9shape.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9tex.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\d3dx9xof.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\Dcommon.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dinput.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dinputd.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dsconf.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dsetup.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dsound.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\DWrite.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dxdiag.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\DxErr.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dxfile.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\DXGI.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\DXGIFormat.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\DXGIType.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\dxsdkver.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\gameux.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\PIXPlugin.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\rmxfguid.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\rmxftmpl.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\Rpcsal.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\X3DAudio.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\xact3.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\xact3d3.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\xact3wb.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XAPO.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XAPOBase.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XAPOFX.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XAudio2.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XAudio2fx.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XDSP.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\XInput.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\xma2defs.h" />
+    <ClInclude Include="Library\Microsoft DirectX SDK\Include\xnamath.h" />
+    <ClInclude Include="Source\Core\DirectX\ArsDirectSound.h" />
+    <ClInclude Include="Source\Core\Math\ArsVector3.h" />
+    <ClInclude Include="Source\Core\Sound\ArsSoundManager.h" />
+    <ClInclude Include="Source\Core\Sound\ArsSound.h" />
+    <ClInclude Include="Source\ArsAllIncludes.h" />
+    <ClInclude Include="Source\ArsHelper.h" />
+    <ClInclude Include="Source\Core\ArsConfiguration.h" />
+    <ClInclude Include="Source\Core\ArsIncludeCores.h" />
+    <ClInclude Include="Source\Core\ArsSingleton.h" />
+    <ClInclude Include="Source\Core\Camera\ArsCameraSystem.h" />
+    <ClInclude Include="Source\Core\DirectX\AllDirectXIncluders.h" />
+    <ClInclude Include="Source\Core\DirectX\ArsDirectGraphics.h" />
+    <ClInclude Include="Source\Core\DirectX\ArsSprite.h" />
+    <ClInclude Include="Source\Core\Fps\ArsFpsAdjuster.h" />
+    <ClInclude Include="Source\Core\Fps\ArsFpsCounter.h" />
+    <ClInclude Include="Source\Core\GameFrame\ArsGameFrame.h" />
+    <ClInclude Include="Source\Core\Input\ArsInput.h" />
+    <ClInclude Include="Source\Core\Model\ArsModel.h" />
+    <ClInclude Include="Source\Core\Model\ArsModelManager.h" />
+    <ClInclude Include="Source\Core\Texture\ArsTexture.h" />
+    <ClInclude Include="Source\Core\Texture\ArsTextureManager.h" />
+    <ClInclude Include="Source\Core\Vertex\ArsVertex.h" />
+    <ClInclude Include="Source\GamaObjects\ArsAllGameObjectIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\ArsGameObjectFactory.h" />
+    <ClInclude Include="Source\GamaObjects\ArsGameObjectType.h" />
+    <ClInclude Include="Source\GamaObjects\BaseGameObjects\ArsChildGameObject.h" />
+    <ClInclude Include="Source\GamaObjects\BaseGameObjects\ArsGameObject.h" />
+    <ClInclude Include="Source\GamaObjects\Character\ArsAllCharactersIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Character\ArsArrowType.h" />
+    <ClInclude Include="Source\GamaObjects\Character\ArsCharacter.h" />
+    <ClInclude Include="Source\GamaObjects\Character\ArsPlayer.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\AllEnemyIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\ArsBoss.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\ArsEnemy.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\ArsWolf.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\Parts\ArsAllEnemyPartsIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\Parts\ArsFrontLeftLeg.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\Parts\ArsFrontRightLeg.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\Parts\ArsHindLeftLeg.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Enemy\Parts\ArsHindRightLeg.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Parts\ArsAllPartsIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Parts\ArsHead.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Parts\ArsLeftArm.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Parts\ArsLeftLeg.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Parts\ArsRightArm.h" />
+    <ClInclude Include="Source\GamaObjects\Character\Parts\ArsRightLeg.h" />
+    <ClInclude Include="Source\GamaObjects\Effect\ArsAllEffectIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Effect\ArsEffect.h" />
+    <ClInclude Include="Source\GamaObjects\Fragment\ArsAllFragmentIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Fragment\ArsFireWall.h" />
+    <ClInclude Include="Source\GamaObjects\Fragment\ArsFireWallFragment.h" />
+    <ClInclude Include="Source\GamaObjects\Stage\AllStagesIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Stage\ArsWall.h" />
+    <ClInclude Include="Source\GamaObjects\UserInterface\ArsUserInterface.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\Arrow\ArsAllArrowIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\Arrow\ArsBaseArrow.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\Arrow\ArsFireArrow.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\Arrow\ArsNormalArrow.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\ArsAllWeaponIncludes.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\ArsBow.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\ArsQuiver.h" />
+    <ClInclude Include="Source\GamaObjects\Weapon\ArsWeapon.h" />
+    <ClInclude Include="Source\Misc\AllMiscIncludes.h" />
+    <ClInclude Include="Source\Misc\ArsClamp.h" />
+    <ClInclude Include="Source\Misc\ArsLerper.h" />
+    <ClInclude Include="Source\Misc\StateMachine\ArsAllStateMachineIncludes.h" />
+    <ClInclude Include="Source\Misc\StateMachine\ArsStateMachine.h" />
+    <ClInclude Include="Source\Misc\StateMachine\StateChanger\ArsStateChanger.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\ArsAllStateIncludes.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\ArsState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\ArsStateType.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsAttackPlayerState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsDeathActionState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsEnemyState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsFreeMoveState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsGoToPlayerState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsKnockBackState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsLookPlayerState.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsRotatePlayer.h" />
+    <ClInclude Include="Source\Misc\StateMachine\State\EnemyState\ArsStopMoveState.h" />
+    <ClInclude Include="Source\Misc\WaitTime\ArsWaitTime.h" />
+    <ClInclude Include="Source\Misc\WaitTime\ArsWaitTimeManager.h" />
+    <ClInclude Include="Source\Scene\ArsAllSceneIncludes.h" />
+    <ClInclude Include="Source\Scene\ArsSceneManager.h" />
+    <ClInclude Include="Source\Scene\ArsSceneType.h" />
+    <ClInclude Include="Source\Scene\BaseScene\ArsScene.h" />
+    <ClInclude Include="Source\Scene\BaseScene\ArsRayInfo.h" />
+    <ClInclude Include="Source\Scene\GameScene\ArsGameScene.h" />
+    <ClInclude Include="Source\Scene\ResultScene\ArsResult.h" />
+    <ClInclude Include="Source\Scene\TitleScene\ArsTitle.h" />
+    <ClInclude Include="Source\Scene\TitleScene\ArsTitleScene.h" />
+  </ItemGroup>
+  <ItemGroup>
+    <Text Include="Library\Microsoft DirectX SDK\Version.txt" />
+  </ItemGroup>
+  <ItemGroup>
+    <None Include="Data\Json\GameScene.json" />
+    <None Include="Data\Json\GameScene_EnemyList.json" />
+    <None Include="Data\Json\GameScene_TreeList.json" />
+    <None Include="Data\Json\Player.json" />
+    <None Include="Library\Microsoft DirectX SDK\Include\D3DX10math.inl" />
+    <None Include="Library\Microsoft DirectX SDK\Include\d3dx9math.inl" />
+    <None Include="Library\Microsoft DirectX SDK\Include\D3DX_DXGIFormatConvert.inl" />
+    <None Include="Library\Microsoft DirectX SDK\Include\xnamathconvert.inl" />
+    <None Include="Library\Microsoft DirectX SDK\Include\xnamathmatrix.inl" />
+    <None Include="Library\Microsoft DirectX SDK\Include\xnamathmisc.inl" />
+    <None Include="Library\Microsoft DirectX SDK\Include\xnamathvector.inl" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClCompile Include="Source\Core\Math\ArsMatrix44.cpp" />
+    <ClCompile Include="Source\Core\Math\ArsVector2.cpp" />
+    <ClCompile Include="Source\Core\Math\ArsVector3.cpp" />
+    <ClCompile Include="Include\json\json11.cpp" />
+    <ClCompile Include="Source\Core\Sound\ArsSoundManager.cpp" />
+    <ClCompile Include="Source\Core\ArsMain.cpp" />
+    <ClCompile Include="Source\Core\Camera\ArsCameraSystem.cpp" />
+    <ClCompile Include="Source\Core\DirectX\ArsDirectGraphics.cpp" />
+    <ClCompile Include="Source\Core\DirectX\ArsSprite.cpp" />
+    <ClCompile Include="Source\Core\Fps\ArsFpsAdjuster.cpp" />
+    <ClCompile Include="Source\Core\Fps\ArsFpsCounter.cpp" />
+    <ClCompile Include="Source\Core\GameFrame\ArsGameFrame.cpp" />
+    <ClCompile Include="Source\Core\Input\ArsInput.cpp" />
+    <ClCompile Include="Source\Core\Model\ArsModelManager.cpp" />
+    <ClCompile Include="Source\Core\Texture\ArsTextureManager.cpp" />
+    <ClCompile Include="Source\GamaObjects\ArsGameObjectFactory.cpp" />
+    <ClCompile Include="Source\GamaObjects\ArsGameObjectType.cpp" />
+    <ClCompile Include="Source\GamaObjects\BaseGameObjects\ArsChildGameObject.cpp" />
+    <ClCompile Include="Source\GamaObjects\BaseGameObjects\ArsGameObject.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\ArsCharacter.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\ArsPlayer.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\ArsBoss.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\ArsEnemy.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\ArsWolf.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\Parts\ArsFrontLeftLeg.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\Parts\ArsFrontRightLeg.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\Parts\ArsHindLeftLeg.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Enemy\Parts\ArsHindRightLeg.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Parts\ArsHead.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Parts\ArsLeftArm.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Parts\ArsLeftLeg.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Parts\ArsRightArm.cpp" />
+    <ClCompile Include="Source\GamaObjects\Character\Parts\ArsRightLeg.cpp" />
+    <ClCompile Include="Source\GamaObjects\Effect\ArsEffect.cpp" />
+    <ClCompile Include="Source\GamaObjects\Fragment\ArsFireWall.cpp" />
+    <ClCompile Include="Source\GamaObjects\Fragment\ArsFireWallFragment.cpp" />
+    <ClCompile Include="Source\GamaObjects\Stage\ArsWall.cpp" />
+    <ClCompile Include="Source\GamaObjects\UserInterface\ArsUserInterface.cpp" />
+    <ClCompile Include="Source\GamaObjects\Weapon\Arrow\ArsBaseArrow.cpp" />
+    <ClCompile Include="Source\GamaObjects\Weapon\Arrow\ArsFireArrow.cpp" />
+    <ClCompile Include="Source\GamaObjects\Weapon\Arrow\ArsNormalArrow.cpp" />
+    <ClCompile Include="Source\GamaObjects\Weapon\ArsBow.cpp" />
+    <ClCompile Include="Source\GamaObjects\Weapon\ArsQuiver.cpp" />
+    <ClCompile Include="Source\GamaObjects\Weapon\ArsWeapon.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\ArsStateMachine.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\StateChanger\ArsStateChanger.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\ArsState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsAttackPlayerState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsDeathActionState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsEnemyState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsFreeMoveState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsGoToPlayerState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsKnockBackState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsLookPlayerState.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsRotatePlayer.cpp" />
+    <ClCompile Include="Source\Misc\StateMachine\State\EnemyState\ArsStopMoveState.cpp" />
+    <ClCompile Include="Source\Misc\WaitTime\ArsWaitTime.cpp" />
+    <ClCompile Include="Source\Scene\ArsSceneManager.cpp" />
+    <ClCompile Include="Source\Scene\BaseScene\ArsScene.cpp" />
+    <ClCompile Include="Source\Scene\GameScene\ArsGameScene.cpp" />
+    <ClCompile Include="Source\Scene\ResultScene\ArsResult.cpp" />
+    <ClCompile Include="Source\Scene\TitleScene\ArsTitle.cpp" />
+    <ClCompile Include="Source\Scene\TitleScene\ArsTitleScene.cpp" />
+  </ItemGroup>
+  <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
+  <ImportGroup Label="ExtensionTargets">
+  </ImportGroup>
+</Project>
